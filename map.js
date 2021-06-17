@@ -40,7 +40,7 @@ require([
         weight: "bold"
       }
     },
-    labelPlacement: "center-center",
+    labelPlacement: "bottom-center",
     labelExpressionInfo: {
       expression: "$feature.place"
     }
@@ -82,7 +82,7 @@ require([
     });
 
         const layer = new FeatureLayer({
-                url: "https://services5.arcgis.com/zn7rdbgknqfQXstH/arcgis/rest/services/world/FeatureServer/0",
+                url: "https://services5.arcgis.com/zn7rdbgknqfQXstH/arcgis/rest/services/labs/FeatureServer/0",
                 labelingInfo: [locationLabels],
                 renderer: iconRenderer,
                 popupTemplate: popupTemplate

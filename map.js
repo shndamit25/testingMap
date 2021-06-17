@@ -1,8 +1,8 @@
 require([
   "esri/Map",
   "esri/views/MapView",
-  "esri/layers/CSVLayer"
-], function (Map, MapView, CSVLayer) {
+  "esri/layers/FeatureLayer"
+], function (Map, MapView,FeatureLayer) {
 
   const popupTemplate = {
     content: "{place}"

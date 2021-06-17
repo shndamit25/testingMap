@@ -81,14 +81,16 @@ require([
       zoom: mapConfiguration.zoom
     });
 
-    let csvLayer = new CSVLayer({
-      url: mapConfiguration.csvUrl,
-      labelingInfo: [locationLabels],
-      renderer: iconRenderer,
-      popupTemplate: popupTemplate
-    });
+        const layer = new FeatureLayer({
+                url: "https://services5.arcgis.com/zn7rdbgknqfQXstH/arcgis/rest/services/world/FeatureServer/0",
+                labelingInfo: [locationLabels],
+                renderer: iconRenderer,
+                popupTemplate: popupTemplate
+  
+        });
 
-    map.add(csvLayer);
+
+    map.add(layer);
 
   }
 
